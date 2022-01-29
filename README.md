@@ -6,6 +6,7 @@ Este encriptador-desencriptador fue parte del desafío que nos propuso Alura + O
 El desafío se inserta dentro del recorrido formación: "Lógica de programación para principiantes".
 
 Los requisitos eran los siguientes:
+
  /*-------------------------------------------------------------------------------------------------*/
       
       Bienvenidos y Bienvenidas a nuestro primer desafío!
