@@ -53,12 +53,9 @@ btn_agregarRegla.addEventListener("click", function(event){
 function setReglasDefault() {
     // Setea las reglas por default
     var botones_eliminar = document.querySelectorAll(".eliminar-regla");
-    console.log(botones_eliminar);
     for (let boton of botones_eliminar) {
-    console.log(boton);
     boton.addEventListener("click", function(event) {
                 eliminarRegla(this.parentNode,  div_reglas)
-                console.log("aaa");
                 event.preventDefault();
                 });
     }

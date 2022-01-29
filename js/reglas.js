@@ -28,14 +28,12 @@ function validaReglas() {
     for (let regla of reglasHTML) {
         claves.push(regla.querySelector("select").value);
     }
-    console.log("claves: " + claves);
  
     for (let regla of reglasHTML) {
         codificaciones.push(regla.querySelector("input").value);
     }
 
     if (encuentraDuplicados(claves)) {
-        console.log("encunetra duplocados true detectado");
         sin_errores = false;        erroresHTML.classList.remove("oculto");
         let duplicadoHTML = document.createElement("p");
         duplicadoHTML.textContent = "Lo siento, no puede haber letras duplicadas";
@@ -90,13 +88,10 @@ function encuentraDuplicados(array) {
             cuenta[letra] = 1;
         }
     }
-    
-    Object.keys(cuenta).forEach(function(key, index) {
 
+    Object.keys(cuenta).forEach(function(key, index) {
         if (cuenta[key] > 1) {
             duplicados = true;
-        } else {
-            duplicados = false;
         }
     });
     var cuenta = {};
