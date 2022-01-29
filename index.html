@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="js/encriptar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/reglas.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <title>Challenge Lógica de Programación</title>
+  </head>
+  <body>
+  
+    <header>
+    </header>
+    
+    <main>
+        
+        <h1>Challenge Lógica de Programación</h1>
+        <h2>Encriptador-Desencriptador de texto</h2>
+        
+        <form id="formulario">
+            
+            <div class="campotexto">
+                <label for=txt-usuario>Texto del usuario</label>
+                <textarea type="text" name="txt-usuario" id="txt-usuario"></textarea>
+            </div>
+            
+            <div class="campotexto">
+                <label for="txt-resultado">Resultado</label>
+                <textarea type="text" name="txt-resultado" id="txt-resultado" readonly></textarea>
+            </div>
+                      
+            <div class="botonera">
+                <button id="btn-encriptar" class="btn">Encriptar</button>
+                <button id="btn-copiar" class="btn">Copiar al portapapeles</button>
+                <button id="btn-desencriptar" class="btn">Desencriptar</button>
+                <button id="btn-limpiar" class="btn">Limpiar</button>
+            </div>
+        </form>
+        
+        <div id="claves">
+                <h3>Claves Personalizadas</h3>
+                <div id="erroresHTML" class="oculto">
+
+                </div>
+                <div class="reglas">
+                    <div class="regla" id="regla-1">
+                        <select name="clave-1" id="clave-1" >
+                            <option value="a" selected>a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                            <option value="f">f</option>
+                            <option value="g">g</option>
+                            <option value="h">h</option>
+                            <option value="i">i</option>
+                            <option value="j">j</option>
+                            <option value="k">k</option>
+                            <option value="l">l</option>
+                            <option value="m">m</option>
+                            <option value="n">n</option>
+                            <option value="ñ">ñ</option>
+                            <option value="o">o</option>
+                            <option value="p">p</option>
+                            <option value="q">q</option>
+                            <option value="r">r</option>
+                            <option value="s">s</option>
+                            <option value="t">t</option>
+                            <option value="u">u</option>
+                            <option value="v">v</option>
+                            <option value="w">w</option>
+                            <option value="x">x</option>
+                            <option value="y">y</option>
+                            <option value="z">z</option>
+                        </select>
+                        <p>------&gt;</p>
+                        <input class="codificacion" id="cod-regla-1" type="text" value="ai">
+                        <button class="btn eliminar-regla" id="eliminar-regla-1">Eliminar</button>
+                    </div>
+                    
+                    <div class="regla" id="regla-1">
+                        <select name="clave-1" id="clave-1" >
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e" selected>e</option>
+                            <option value="f">f</option>
+                            <option value="g">g</option>
+                            <option value="h">h</option>
+                            <option value="i">i</option>
+                            <option value="j">j</option>
+                            <option value="k">k</option>
+                            <option value="l">l</option>
+                            <option value="m">m</option>
+                            <option value="n">n</option>
+                            <option value="ñ">ñ</option>
+                            <option value="o">o</option>
+                            <option value="p">p</option>
+                            <option value="q">q</option>
+                            <option value="r">r</option>
+                            <option value="s">s</option>
+                            <option value="t">t</option>
+                            <option value="u">u</option>
+                            <option value="v">v</option>
+                            <option value="w">w</option>
+                            <option value="x">x</option>
+                            <option value="y">y</option>
+                            <option value="z">z</option>
+                        </select>
+                        <p>------&gt;</p>
+                        <input class="codificacion" id="cod-regla-1" type="text" value="enter">
+                        <button class="btn eliminar-regla" id="eliminar-regla-1">Eliminar</button>
+                    </div>
+                    
+                    <div class="regla" id="regla-1">
+                        <select name="clave-1" id="clave-1" >
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                            <option value="f">f</option>
+                            <option value="g">g</option>
+                            <option value="h">h</option>
+                            <option value="i" selected >i</option>
+                            <option value="j">j</option>
+                            <option value="k">k</option>
+                            <option value="l">l</option>
+                            <option value="m">m</option>
+                            <option value="n">n</option>
+                            <option value="ñ">ñ</option>
+                            <option value="o">o</option>
+                            <option value="p">p</option>
+                            <option value="q">q</option>
+                            <option value="r">r</option>
+                            <option value="s">s</option>
+                            <option value="t">t</option>
+                            <option value="u">u</option>
+                            <option value="v">v</option>
+                            <option value="w">w</option>
+                            <option value="x">x</option>
+                            <option value="y">y</option>
+                            <option value="z">z</option>
+                        </select>
+                        <p>------&gt;</p>
+                        <input class="codificacion" id="cod-regla-1" type="text" value="imes">
+                        <button class="btn eliminar-regla" id="eliminar-regla-1">Eliminar</button>
+                    </div>
+                    
+                    <div class="regla" id="regla-1">
+                        <select name="clave-1" id="clave-1" >
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                            <option value="f">f</option>
+                            <option value="g">g</option>
+                            <option value="h">h</option>
+                            <option value="i">i</option>
+                            <option value="j">j</option>
+                            <option value="k">k</option>
+                            <option value="l">l</option>
+                            <option value="m">m</option>
+                            <option value="n">n</option>
+                            <option value="ñ">ñ</option>
+                            <option value="o" selected>o</option>
+                            <option value="p">p</option>
+                            <option value="q">q</option>
+                            <option value="r">r</option>
+                            <option value="s">s</option>
+                            <option value="t">t</option>
+                            <option value="u">u</option>
+                            <option value="v">v</option>
+                            <option value="w">w</option>
+                            <option value="x">x</option>
+                            <option value="y">y</option>
+                            <option value="z">z</option>
+                        </select>
+                        <p>------&gt;</p>
+                        <input class="codificacion" id="cod-regla-1" type="text" value="ober">
+                        <button class="btn eliminar-regla" id="eliminar-regla-1">Eliminar</button>
+                    </div>
+                    
+                    <div class="regla" id="regla-1">
+                        <select name="clave-1" id="clave-1">
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                            <option value="e">e</option>
+                            <option value="f">f</option>
+                            <option value="g">g</option>
+                            <option value="h">h</option>
+                            <option value="i">i</option>
+                            <option value="j">j</option>
+                            <option value="k">k</option>
+                            <option value="l">l</option>
+                            <option value="m">m</option>
+                            <option value="n">n</option>
+                            <option value="ñ">ñ</option>
+                            <option value="o">o</option>
+                            <option value="p">p</option>
+                            <option value="q">q</option>
+                            <option value="r">r</option>
+                            <option value="s">s</option>
+                            <option value="t">t</option>
+                            <option value="u" selected>u</option>
+                            <option value="v">v</option>
+                            <option value="w">w</option>
+                            <option value="x">x</option>
+                            <option value="y">y</option>
+                            <option value="z">z</option>
+                        </select>
+                        <p>------&gt;</p>
+                        <input class="codificacion" id="cod-regla-1" type="text" value="ufat">
+                        <button class="btn eliminar-regla" id="eliminar-regla-1">Eliminar</button>
+                    </div>
+                </div>
+        </div>
+        
+        <button class="btn" id="agregar-regla">Agregar Nueva Regla</button>
+        <button class="btn" id="guardar-reglas">Guardar Reglas</button>
+    
+    <footer>
+    
+        <p>Diseñado por Nicolás Ricardo Cejas Montero</p>
+        
+    </footer>
+        <script src="js/principal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+ * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #101364;
+    background-color: lightblue;
+}
+
+h1, h2 {
+    
+    color: #101364;
+    margin: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h3 {
+    margin-bottom: 15px;
+}
+
+input, select{
+    width: 50px;
+    padding: 6px 8px;
+    display: inline-block;
+    background-color: #29344c;
+    color: lightblue;
+}
+
+.btn {
+    font-size: 18px;
+    color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #101364;
+    
+}
+
+.btn:hover{
+    background-color: #0a0c3e;
+}
+
+#formulario {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+#formulario .btn {
+    display: inline-block;
+}
+
+#formulario .botonera {
+    text-align: center;
+}
+
+#formulario div.campotexto {
+    display: inline-block;
+}
+
+#formulario .campotexto textarea {
+    font-size: 16px;
+    color: lightblue;
+    background-color: #29344c;
+    padding: 15px;
+    width: 500px;
+    height: 300px;
+    border: 1px solid gray;
+    
+}
+
+#formulario label {
+    font-size: 20px;    
+    color: #101364;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#formulario .botonera{
+    margin-top: 30px;
+}
+
+#claves{
+    padding: 60px;
+}
+#claves label{
+    margin-right: 15px;
+}
+
+#claves .regla {
+    margin-top: 15px;
+}
+
+#claves .regla p {
+    margin: 0 25px;
+    display: inline-block;
+}
+
+.oculto {
+    display: none;
+}
+#erroresHTML {
+    color: red;
+    font-weight: bold;
+}
