@@ -1,5 +1,5 @@
 # encriptador-desencriptador
-Encriptador-Desdencriptador de texto realizado para Challenge de Alura
+Encriptador-Desencriptador de texto realizado para Challenge de Alura
 
 Buenas!
 Este encriptador-desencriptador fue parte del desafío que nos propuso Alura + Oracle en el programa One. 
